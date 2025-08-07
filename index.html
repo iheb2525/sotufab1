@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTUFAB - Fabricant et Designer de Meubles en Tunisie</title>
+    <meta name="description" content="SOTUFAB Meubles - Fabricant et designer de meubles en Tunisie. Chambres, mobilier scolaire, bureautique, chaises et tables. Livraison gratuite partout en Tunisie.">
+    <link rel="stylesheet" href="styles.css">
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="img/LOGO-Sotufab-meubles-slogan-19-300x84.png" alt="SOTUFAB Logo" class="logo">
+                
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Nos Produits</a></li>
+                <li><a href="#avantages">Avantages</a></li>
+                
+                <li><a href="#showrooms">Showrooms</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://sotufab.tn/boutique/" class="btn-boutique">Boutique en ligne</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Fabricant et Designer de Meubles en Tunisie</h2>
+                <p>Découvrez notre large gamme de meubles de qualité : chambres, mobilier scolaire, bureautique, chaises et tables. Excellent rapport qualité-prix avec livraison gratuite partout en Tunisie.</p>
+                <div class="hero-buttons">
+                    <a href="#produits" class="btn-primary">Découvrir nos produits</a>
+                    <a href="https://sotufab.tn/boutique/" class="btn-secondary">Commander en ligne</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Années d'expérience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Clients satisfaits</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Service client</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/48056303_952125028245118_2084528657325359104_n.jpg" alt="Mobilier SOTUFAB">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produits" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Catégories de Produits</h2>
+                <p>Une gamme complète de meubles pour tous vos besoins</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-category">
+                    <div class="category-image">
+                        <img src="img/clara_Plan-de-travail-1.jpg" alt="Chambre Adulte">
+                    </div>
+                    <div class="category-content">
+                        <h3>Chambre Adulte</h3>
+                        <p>Lits, armoires, commodes et tables de chevet de qualité supérieure</p>
+                        <a href="https://sotufab.tn/categorie-produit/meuble/chambre-adulte/" class="category-link">Découvrir <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-category">
+                    <div class="category-image">
+                        <img src="img/CH-ALICE-.jpg" alt="Chambre Enfant">
+                    </div>
+                    <div class="category-content">
+                        <h3>Chambre Enfant</h3>
+                        <p>Mobilier coloré et sécurisé pour le confort de vos enfants</p>
+                        <a href="https://sotufab.tn/categorie-produit/meuble/chambre-enfant/" class="category-link">Découvrir <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-category">
+                    <div class="category-image">
+                        <img src="img/VECTER6_Plan-de-travail-1.jpeg" alt="Chaises et Tables">
+                    </div>
+                    <div class="category-content">
+                        <h3>Chaises & Tables</h3>
+                        <p>Tables et chaises élégantes pour votre salle à manger</p>
+                        <a href="https://sotufab.tn/categorie-produit/tables-chaises/" class="category-link">Découvrir <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-category">
+                    <div class="category-image">
+                        <img src="img/ht.jpg" alt="Bureautique">
+                    </div>
+                    <div class="category-content">
+                        <h3>Bureautique</h3>
+                        <p>Mobilier de bureau professionnel pour votre espace de travail</p>
+                        <a href="https://sotufab.tn/categorie-produit/bureautiques/" class="category-link">Découvrir <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-category">
+                    <div class="category-image">
+                        <img src="img/TABLE-REFECTOIRE_Plan-de-travail-1.jpg" alt="Mobilier Scolaire">
+                    </div>
+                    <div class="category-content">
+                        <h3>Mobilier Scolaire</h3>
+                        <p>Équipements scolaires durables et ergonomiques</p>
+                        <a href="https://sotufab.tn/categorie-produit/mobilier-scolaire/" class="category-link">Découvrir <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-category">
+                    <div class="category-image">
+                        <img src="img/Diana-beige_Plan-de-travail-1.jpeg" alt="Salon">
+                    </div>
+                    <div class="category-content">
+                        <h3>Salon & Séjour</h3>
+                        <p>Canapés, tables basses et meubles TV pour votre salon</p>
+                        <a href="https://sotufab.tn/categorie-produit/meuble/salon/" class="category-link">Découvrir <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="avantages" class="advantages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Avantages</h2>
+                <p>Pourquoi choisir SOTUFAB pour vos meubles ?</p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>LIVRAISON OFFERTE
+                        PARTOUT EN TUNISIE</h3>
+                    <p>Livraison offerte partout en Tunisie. Service disponible 7/7 avec livraison en quelques jours seulement.</p>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Excellent Rapport Qualité/Prix</h3>
+                    <p>Meubles robustes et de qualité irréprochable, accessibles à tous avec le meilleur rapport qualité/prix.</p>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Service Après-Vente 7/7</h3>
+                    <p>Service clientèle et après-vente disponible 7 jours sur 7 pour plus de flexibilité et de sérénité.</p>
+                </div>
+
+             
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="bestsellers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Best Sellers</h2>
+                <p>Les produits les plus appréciés par nos clients</p>
+            </div>
+            <div class="bestsellers-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/console-STEP-12.jpg" alt="Console Step Complete">
+                    </div>
+                    <div class="product-info">
+                        <h4>Console Step Complete</h4>
+                        <p>Meuble TV moderne et fonctionnel</p>
+                        <a href="https://sotufab.tn/produit/meuble/console/console-step-complete/" class="product-link">Voir le produit</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/oriantt_Plan-de-travail-1-scaled.jpg" alt="Chaise Orion Capitonné">
+                    </div>
+                    <div class="product-info">
+                        <h4>Chaise Orion Capitonné</h4>
+                        <p>Chaise élégante et confortable</p>
+                        <a href="https://sotufab.tn/produit/tables-chaises/chaises/chaise-orion-capitonne/" class="product-link">Voir le produit</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Sans-titre-1-10.jpg" alt="Bahut Vito">
+                    </div>
+                    <div class="product-info">
+                        <h4>Bahut Vito</h4>
+                        <p>Buffet moderne pour votre salon</p>
+                        <a href="https://sotufab.tn/produit/meuble/buffet/buffet-vito/" class="product-link">Voir le produit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="avis" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Avis de nos clients</h2>
+                <p>Ce que nos clients disent de SOTUFAB</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="reviewer">
+                        <img src="https://ui-avatars.com/api/?name=Sana+Ben+Henia" alt="Sana Ben Henia">
+                        <h4>Sana Ben Henia</h4>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Excellente qualité et service irréprochable. Livraison rapide et équipe très professionnelle. Je recommande vivement !"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="reviewer">
+                        <img src="https://ui-avatars.com/api/?name=Jamel+Abdallah" alt="Jamel Abdallah">
+                        <h4>Jamel Abdallah</h4>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Très bon rapport qualité/prix. Les meubles sont robustes et élégants. Le support client est disponible et à l'écoute."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="reviewer">
+                        <img src="https://ui-avatars.com/api/?name=Amira+Rhili+Kasmi" alt="Amira Rhili Kasmi">
+                        <h4>Amira Rhili Kasmi</h4>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Une belle expérience d'achat en ligne. Le site est facile à utiliser et la livraison a été rapide. Les produits dépassent mes attentes."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showrooms Section -->
+    <section id="showrooms" class="showrooms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Showrooms en Tunisie</h2>
+                <p>Visitez nos espaces d'exposition partout en Tunisie</p>
+            </div>
+            <div class="showrooms-content">
+                <div class="showrooms-text">
+                    <h3>Nous sommes de plus en plus proche de chez vous !</h3>
+                    <p>Retrouvez toutes nos agences et showrooms en Tunisie. Nos équipes sont là pour vous conseiller et vous accompagner dans le choix de vos meubles.</p>
+                    <div class="showrooms-features">
+                        <div class="feature">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Plusieurs points de vente en Tunisie</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Équipe professionnelle et expérimentée</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-eye"></i>
+                            <span>Voir et toucher nos produits avant achat</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-primary">Nous contacter</a>
+                </div>
+                <div class="showrooms-map">
+                    <h3>Trouvez le showroom le plus proche</h3>
+                    <div id="sotufab-map" style="height: 400px; width: 100%; border-radius: 10px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à transformer votre intérieur ?</h2>
+                <p>Découvrez notre collection complète et commandez en ligne dès maintenant</p>
+                <div class="cta-buttons">
+                    <a href="https://sotufab.tn/boutique/" class="btn-primary">Boutique en ligne</a>
+                    <a href="#contact" class="btn-secondary">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="img/LOGO-Sotufab-meubles-slogan-19-300x84.png" alt="SOTUFAB Logo">
+                        
+                    </div>
+                    <p>Fabricant et designer de meubles en Tunisie depuis plus de 15 ans. Votre satisfaction est notre priorité.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/sotufabmeuble/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Nos Produits</h4>
+                    <ul>
+                        <li><a href="https://sotufab.tn/categorie-produit/meuble/chambre-adulte/">Chambre Adulte</a></li>
+                        <li><a href="https://sotufab.tn/categorie-produit/meuble/chambre-enfant/">Chambre Enfant</a></li>
+                        <li><a href="https://sotufab.tn/categorie-produit/tables-chaises/">Chaises & Tables</a></li>
+                        <li><a href="https://sotufab.tn/categorie-produit/bureautiques/">Bureautique</a></li>
+                        <li><a href="https://sotufab.tn/categorie-produit/mobilier-scolaire/">Mobilier Scolaire</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Livraison gratuite</a></li>
+                        <li><a href="#">Service après-vente</a></li>
+                        <li><a href="#">Garantie produits</a></li>
+                        <li><a href="#">Paiement sécurisé</a></li>
+                        <li><a href="#">Showrooms</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+216 XX XXX XXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@sotufab.tn</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tunisie</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Service 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p> 2025 SOTUFAB Meubles. Tous droits réservés. | Fabricant et designer de meubles en Tunisie</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>
