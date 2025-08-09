@@ -19,16 +19,15 @@
                 <img src="img/LOGO-Sotufab-meubles-slogan-19-300x84.png" alt="SOTUFAB Logo" class="logo">
                 
             </div>
-            <ul class="nav-menu">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#produits">Nos Produits</a></li>
-                <li><a href="#avantages">Avantages</a></li>
-                
-                <li><a href="#showrooms">Showrooms</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            
+            <div class="nav-center-message">
+                <span> Profitez vite de -10% sur vos projets </span>
+            </div>
+            
             <div class="nav-actions">
+                <a href="#contact-form" class="btn-1">Nous contacter</a>
                 <a href="https://sotufab.tn/boutique/" class="btn-boutique">Boutique en ligne</a>
+                
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -46,7 +45,7 @@
                 <p>Découvrez notre large gamme de meubles de qualité : chambres, mobilier scolaire, bureautique, chaises et tables. Excellent rapport qualité-prix avec livraison gratuite partout en Tunisie.</p>
                 <div class="hero-buttons">
                     <a href="#produits" class="btn-primary">Découvrir nos produits</a>
-                    <a href="https://sotufab.tn/boutique/" class="btn-secondary">Commander en ligne</a>
+                    <a href="#contact-form" class="btn-secondary">Nous contacter</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
@@ -309,7 +308,7 @@
                             <span>Voir et toucher nos produits avant achat</span>
                         </div>
                     </div>
-                    <a href="#contact" class="btn-primary">Nous contacter</a>
+                    <a href="#contact-form" class="btn-primary">Nous contacter</a>
                 </div>
                 <div class="showrooms-map">
                     <h3>Trouvez le showroom le plus proche</h3>
@@ -327,7 +326,86 @@
                 <p>Découvrez notre collection complète et commandez en ligne dès maintenant</p>
                 <div class="cta-buttons">
                     <a href="https://sotufab.tn/boutique/" class="btn-primary">Boutique en ligne</a>
-                    <a href="#contact" class="btn-secondary">Nous contacter</a>
+                    <a href="#contact-form" class="btn-secondary">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-nous</h2>
+                <p>Envoyez-nous votre demande et nous vous répondrons rapidement</p>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">Nom *</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom">Prénom *</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                      
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Votre message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre demande ou votre projet..."></textarea>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="contact-info-sidebar">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Téléphone</h4>
+                            <p>+216 21 293 000
+                                <br>
+                                +216 36 434 770 
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info[at]sotufab.tn</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Horaires</h4>
+                            <p>Service 24/7</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -350,38 +428,21 @@
                     </div>
                 </div>
 
-                <div class="footer-section">
-                    <h4>Nos Produits</h4>
-                    <ul>
-                        <li><a href="https://sotufab.tn/categorie-produit/meuble/chambre-adulte/">Chambre Adulte</a></li>
-                        <li><a href="https://sotufab.tn/categorie-produit/meuble/chambre-enfant/">Chambre Enfant</a></li>
-                        <li><a href="https://sotufab.tn/categorie-produit/tables-chaises/">Chaises & Tables</a></li>
-                        <li><a href="https://sotufab.tn/categorie-produit/bureautiques/">Bureautique</a></li>
-                        <li><a href="https://sotufab.tn/categorie-produit/mobilier-scolaire/">Mobilier Scolaire</a></li>
-                    </ul>
-                </div>
+              
 
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Livraison gratuite</a></li>
-                        <li><a href="#">Service après-vente</a></li>
-                        <li><a href="#">Garantie produits</a></li>
-                        <li><a href="#">Paiement sécurisé</a></li>
-                        <li><a href="#">Showrooms</a></li>
-                    </ul>
-                </div>
 
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <div class="contact-info">
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+216 XX XXX XXX</span>
+                            <span>+216 21 293 000
+                                <br>
+                                +216 36 434 770</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>contact@sotufab.tn</span>
+                            <span>info[at]sotufab.tn</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
@@ -395,14 +456,106 @@
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <p> 2025 SOTUFAB Meubles. Tous droits réservés. | Fabricant et designer de meubles en Tunisie</p>
-            </div>
+            
         </div>
     </footer>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    
+    <!-- Contact Form Handler -->
+    <script>
+        // Scroll to top on page load/refresh
+        window.addEventListener('load', function() {
+            window.scrollTo(0, 0);
+        });
+        
+        // Also scroll to top when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            window.scrollTo(0, 0);
+            const contactForm = document.getElementById('contact-form');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    // Prevent default form submission to avoid refresh confirmation
+                    e.preventDefault();
+                    
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    // Show loading state
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+                    submitBtn.disabled = true;
+                    
+                    // Get form data
+                    const formData = {
+                        nom: document.getElementById('nom').value,
+                        prenom: document.getElementById('prenom').value,
+                        email: document.getElementById('email').value,
+                        message: document.getElementById('message').value
+                    };
+                    
+                    // Validate required fields
+                    if (!formData.nom || !formData.prenom || !formData.email || !formData.message) {
+                        // Reset button
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        
+                        showMessage('Veuillez remplir tous les champs obligatoires.', 'error');
+                        return;
+                    }
+                    
+                    // Simulate form processing
+                    setTimeout(() => {
+                        // Reset button
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        
+                        // Show success message
+                        showMessage('Message envoyé avec succès! Nous vous répondrons bientôt.', 'success');
+                        
+                        // Clear form
+                        contactForm.reset();
+                        
+                        // Log form data for testing
+                        console.log('Form data:', formData);
+                        
+                    }, 2000);
+                });
+            }
+        });
+        
+        // Function to show messages
+        function showMessage(text, type) {
+            // Remove existing messages
+            const existingMessages = document.querySelectorAll('.form-message');
+            existingMessages.forEach(msg => msg.remove());
+            
+            // Create message element
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `form-message form-message-${type}`;
+            messageDiv.innerHTML = `
+                <div class="message-content">
+                    <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-triangle'}"></i>
+                    <span>${text}</span>
+                    <button class="message-close" onclick="this.parentElement.parentElement.remove()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            `;
+            
+            // Insert message fixed under the navbar
+            document.body.appendChild(messageDiv);
+            
+            // Auto-hide after 8 seconds
+            setTimeout(() => {
+                if (messageDiv.parentNode) {
+                    messageDiv.remove();
+                }
+            }, 8000);
+        }
+    </script>
+    
     <script src="script.js"></script>
 </body>
 </html>
