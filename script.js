@@ -52,15 +52,19 @@ function initializeNavigation() {
                 });
                 
                 // Close mobile menu if open
-                if (navMenu.classList.contains('active')) {
+                if (navMenu && navMenu.classList.contains('active')) {
                     navMenu.classList.remove('active');
-                    hamburger.classList.remove('active');
-                    
-                    // Reset hamburger animation
-                    const spans = hamburger.querySelectorAll('span');
-                    spans[0].style.transform = 'none';
-                    spans[1].style.opacity = '1';
-                    spans[2].style.transform = 'none';
+                    if (hamburger) {
+                        hamburger.classList.remove('active');
+                        
+                        // Reset hamburger animation
+                        const spans = hamburger.querySelectorAll('span');
+                        if (spans.length >= 3) {
+                            spans[0].style.transform = 'none';
+                            spans[1].style.opacity = '1';
+                            spans[2].style.transform = 'none';
+                        }
+                    }
                 }
             }
         });

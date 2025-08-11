@@ -1117,3 +1117,188 @@ img:not([src]) {
         top: 80px;
     }
 }
+
+/* Mobile Promotional Banner */
+.mobile-promo-banner {
+    display: none;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 600;
+    animation: pulse 2s infinite;
+    position: relative;
+    z-index: 1001;
+}
+
+.mobile-promo-banner span {
+    display: inline-block;
+}
+
+/* Mobile Navigation Menu */
+.nav-menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    z-index: 999;
+    padding: 1rem 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.nav-menu.active {
+    display: block;
+    transform: translateY(0);
+}
+
+.nav-menu a {
+    display: block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+}
+
+.nav-menu .mobile-boutique {
+    background: #e74c3c;
+    color: white !important;
+    margin: 1rem 2rem;
+    border-radius: 25px;
+    text-align: center;
+    border-bottom: none;
+}
+
+.nav-menu .mobile-boutique:hover {
+    background: #c0392b;
+}
+
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+    .mobile-promo-banner {
+        display: block;
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(15px);
+    }
+    
+    .navbar {
+        padding: 0.8rem 1rem;
+        position: relative;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(15px);
+    }
+    
+    .nav-center-message {
+        display: none;
+    }
+    
+    .nav-actions {
+        gap: 0.5rem;
+    }
+    
+    .btn-1, .btn-boutique {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    .hamburger {
+        display: flex;
+        z-index: 1001;
+    }
+    
+    .hamburger span {
+        background: #333;
+        margin: 2px 0;
+        transition: 0.3s;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .nav-menu {
+        display: block;
+        top: 108px; /* Adjusted for promo banner height */
+    }
+    
+    /* Ensure navbar stays fixed on scroll with promo banner */
+    body {
+        padding-top: 108px; /* Increased for promo banner */
+    }
+    
+    .hero {
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(15px);
+    }
+    
+    .navbar {
+        padding: 0.5rem;
+    }
+    
+    .logo {
+        height: 30px;
+    }
+    
+    .nav-center-message {
+        display: none;
+    }
+    
+    .nav-actions {
+        gap: 0.3rem;
+    }
+    
+    .btn-1, .btn-boutique {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+    
+    /* Ensure body has proper top padding */
+    body {
+        padding-top: 60px;
+    }
+    
+    .hero {
+        margin-top: 0;
+        padding-top: 1rem;
+    }
+}
